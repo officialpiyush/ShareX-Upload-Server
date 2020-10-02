@@ -14,12 +14,12 @@ if which node > /dev/null
     then
         echo "Node is already installed, skipping..."
     else
-        curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+        curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
         sudo apt-get install -y nodejs
 fi
 cd src && npm i -g pm2
 cd src && npm i
-wget https://iweb.dl.sourceforge.net/project/exiftool/Image-ExifTool-11.80.tar.gz
+wget https://exiftool.org/Image-ExifTool-11.80.tar.gz
 tar xvf Image-ExifTool-11.80.tar.gz
 cd Image-ExifTool-11.80
 perl Makefile.PL
